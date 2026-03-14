@@ -1,39 +1,64 @@
 # expo-starter
 
-An example repo or a startup template for direct native Expo with production ready code and configuration and tooling
+A production-ready starter template for cross-platform mobile apps built with Expo. Targets iOS, Android, and web from a single codebase.
 
 ## Features
 
-- **TypeScript** - For type safety and improved developer experience
-- **React Native** - Build mobile apps using React
-- **Expo** - Tools for React Native development
-- **TailwindCSS** - Utility-first CSS for rapid UI development
-- **Oxlint** - Oxlint + Oxfmt (linting & formatting)
+- **React Native 0.83** + **React 19** + **Expo 55** — latest stable stack
+- **TypeScript 5** — strict mode with `noUncheckedIndexedAccess`
+- **Expo Router 55** — file-based routing with typed routes
+- **React Compiler** — enabled via Expo experiments
+- **TailwindCSS 4** + **Uniwind** — utility-first styling for React Native
+- **HeroUI Native** — component library with light/dark theming
+- **Reanimated 4** + **Gesture Handler** — animations and gestures
+- **Oxlint + Oxfmt** — fast linting and formatting via `ultracite`
+- **Lefthook** — pre-commit hooks for lint/format on staged files
+- **t3-env + Zod** — type-safe environment variables
 
 ## Getting Started
 
-First, install the dependencies:
+Install dependencies:
 
 ```bash
 pnpm install
 ```
 
-Then, run the development server:
+Start the dev server:
 
 ```bash
-pnpm run dev
+pnpm dev
 ```
 
-Open [http://localhost:3001](http://localhost:3001) in your browser to see the web application. Use the Expo Go app to run the mobile application.
+Run on a specific platform:
 
-## Git Hooks and Formatting
-
-- Format and lint fix: `pnpm run check`
+```bash
+pnpm ios        # iOS simulator
+pnpm android    # Android emulator
+pnpm web        # Browser
+```
 
 ## Available Scripts
 
-- `pnpm run dev`: Start all applications in development mode
-- `pnpm run build`: Build all applications
-- `pnpm run check-types`: Check TypeScript types across all apps
-- `pnpm run dev:native`: Start the React Native/Expo development server
-- `pnpm run check`: Run Oxlint and Oxfmt
+```bash
+pnpm dev              # Start Expo dev server (clears cache)
+pnpm start            # Start Expo dev server
+pnpm ios              # Run on iOS simulator
+pnpm android          # Run on Android emulator
+pnpm web              # Run in browser
+pnpm check            # Lint + format check
+pnpm fix              # Lint + format fix
+pnpm check-types      # TypeScript type check (tsc --noEmit)
+pnpm knip             # Dead code / unused exports check
+```
+
+## Project Structure
+
+```
+src/
+  app/           # Expo Router screens (file-based routing)
+  assets/        # Static assets (images, fonts)
+  components/    # Shared UI components
+  contexts/      # React context providers
+  lib/           # Utility modules (env, helpers)
+  global.css     # Tailwind + Uniwind + HeroUI style imports
+```
