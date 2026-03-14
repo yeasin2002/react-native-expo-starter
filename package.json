@@ -1,5 +1,5 @@
 {
-  "name": "native",
+  "name": "expo-starter",
   "version": "1.0.0",
   "private": true,
   "main": "expo-router/entry",
@@ -9,7 +9,9 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "prebuild": "expo prebuild",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "check": "ultracite check",
+    "fix": "ultracite fix"
   },
   "dependencies": {
     "@expo/metro-runtime": "~55.0.6",
@@ -29,6 +31,9 @@
     "expo-status-bar": "~55.0.4",
     "expo-web-browser": "~55.0.9",
     "heroui-native": "^1.0.0-rc.3",
+    "lefthook": "latest",
+    "oxfmt": "^0.40.0",
+    "oxlint": "^1.55.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-native": "0.83.2",
@@ -44,6 +49,7 @@
     "tailwind-variants": "^3.2.2",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
+    "ultracite": "^7.3.0",
     "uniwind": "^1.4.0",
     "zod": "^4.3.6"
   },
