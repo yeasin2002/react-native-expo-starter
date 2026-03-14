@@ -12,7 +12,7 @@
     "web": "expo start --web",
     "check": "ultracite check",
     "fix": "ultracite fix",
-    "check-types": "turbo check-types"
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@expo/metro-runtime": "~55.0.6",
@@ -21,7 +21,9 @@
     "@react-navigation/drawer": "^7.3.9",
     "@react-navigation/elements": "^2.8.1",
     "@t3-oss/env-core": "^0.13.10",
+    "check-types": "^11.2.3",
     "dotenv": "^17.3.1",
+    "eslint": "^10.0.3",
     "expo": "^55.0.0",
     "expo-constants": "~55.0.7",
     "expo-font": "~55.0.4",
@@ -36,6 +38,7 @@
     "lefthook": "latest",
     "oxfmt": "^0.40.0",
     "oxlint": "^1.55.0",
+    "prettier": "^3.8.1",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-native": "0.83.2",
