@@ -1,4 +1,4 @@
-# better-expo-app
+# expo-starter
 
 An example repo or a startup template for direct native Expo with production ready code and configuration and tooling
 

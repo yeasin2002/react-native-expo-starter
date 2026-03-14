@@ -1,13 +1,13 @@
 {
   "expo": {
-    "scheme": "better-expo-app",
+    "scheme": "expo-starter",
     "userInterfaceStyle": "automatic",
     "orientation": "default",
     "web": {
       "bundler": "metro"
     },
-    "name": "better-expo-app",
-    "slug": "better-expo-app",
+    "name": "expo-starter",
+    "slug": "expo-starter",
     "plugins": ["expo-font"],
     "experiments": {
       "typedRoutes": true,
