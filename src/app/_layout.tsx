@@ -1,10 +1,9 @@
 import "@/global.css";
+import { Stack } from "expo-router";
 import { HeroUINativeProvider } from "heroui-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { KeyboardProvider } from "react-native-keyboard-controller";
-
 import { AppThemeProvider } from "@/contexts/app-theme-context";
-import { Stack } from "expo-router";
 
 export const unstable_settings = {
   initialRouteName: "index",

@@ -3,7 +3,7 @@ const { withUniwindConfig } = require("uniwind/metro");
 const { wrapWithReanimatedMetroConfig } = require("react-native-reanimated/metro-config");
 
 /** @type {import('expo/metro-config').MetroConfig} */
-const config = getDefaultConfig(__dirname);
+const config = getDefaultConfig(import.meta.dirname);
 
 const uniwindConfig = withUniwindConfig(wrapWithReanimatedMetroConfig(config), {
   cssEntryFile: "./src/global.css",

@@ -2,6 +2,15 @@
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "extends": ["ultracite/biome/core"],
   "files": {
-    // "includes": ["**", "!!dist/", "!**/*.generated.js", "**", "!!.agents"]
+    "includes": [
+      "src/**",
+      "!!.agents",
+      "!!node_modules",
+      "!!.git",
+      "!!.expo",
+      "!!.vscode",
+      "!!.cursor",
+      "!!.kiro",
+    ],
   },
 }
